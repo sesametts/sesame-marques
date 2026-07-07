@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Sesame · Marques partenaires</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#0106AF;
+    --blue-deep:#04086E;
+    --blue-pale:#EEF0FC;
+    --blue-mid:#D5D9F4;
+    --text:#1B1F3B;
+    --text-soft:#3D4263;
+    --white:#FFFFFF;
+    --cta:#FF5A3C;
+    --cta-deep:#E63946;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:linear-gradient(135deg,#F4F5FB 0%,#E5E9F7 100%);font-family:'Manrope',sans-serif;color:var(--text);min-height:100vh}
+  .frame{width:1200px;margin:0 auto;padding:56px 48px 48px}
+
+  /* HEADER */
+  .header{text-align:center;margin-bottom:28px}
+  .logo{display:inline-flex;align-items:center;gap:14px;background:var(--blue-deep);color:var(--white);padding:14px 28px;border-radius:999px;font-weight:800;letter-spacing:2.5px;font-size:14px;text-transform:uppercase;box-shadow:0 8px 26px rgba(27,34,134,0.20)}
+  .logo::before{content:"✨";font-size:16px}
+  h1{margin-top:22px;font-size:44px;font-weight:800;color:var(--blue-deep);line-height:1.15;letter-spacing:-0.5px}
+  h1 span{color:var(--blue)}
+
+  /* SESAME INTRO */
+  .sesame-intro{background:var(--white);border-radius:20px;padding:36px 40px;margin-top:26px;box-shadow:0 10px 30px rgba(27,34,134,0.08);border:1px solid rgba(27,34,134,0.06);border-left:5px solid var(--blue);display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+  .sesame-wordmark{width:220px;height:220px;border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(1,6,175,0.28);flex-shrink:0}
+  .sesame-wordmark img{width:100%;height:100%;object-fit:cover;display:block}
+  .sesame-intro-block h3{font-size:14px;font-weight:800;color:var(--blue);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
+  .sesame-intro-block p{font-size:14.5px;color:var(--text-soft);line-height:1.6}
+  .sesame-intro-block p strong{color:var(--blue-deep)}
+  .sesame-values{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+  .sesame-value{background:var(--blue-pale);padding:10px 12px;border-radius:10px;font-size:12.5px;font-weight:600;color:var(--blue-deep);display:flex;align-items:center;gap:8px}
+
+  /* SECTION TITLE */
+  .section-title{margin-top:40px;margin-bottom:22px;text-align:center}
+  .section-title h2{font-size:30px;font-weight:800;color:var(--blue-deep);letter-spacing:-0.3px}
+  .section-title h2 span{color:var(--blue)}
+  .section-title p{margin-top:8px;font-size:14px;color:var(--text-soft)}
+
+  /* GRID */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .card{background:var(--white);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(27,34,134,0.08);border:1px solid rgba(27,34,134,0.06);position:relative;display:flex;flex-direction:column}
+  .card::before{content:"";position:absolute;top:0;left:0;width:4px;height:100%;background:var(--brand-color,var(--blue));z-index:2}
+
+  /* PRODUCT PHOTO */
+  .card-photo{width:100%;height:260px;background:linear-gradient(135deg,#F4F5FB 0%,#E5E9F7 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid rgba(27,34,134,0.06);padding:6px}
+  .card-photo img{max-width:100%;max-height:100%;object-fit:contain;display:block;filter:drop-shadow(0 6px 12px rgba(27,34,134,0.15))}
+  .card-photo .placeholder{font-size:60px;opacity:0.35;filter:grayscale(0.2)}
+  .card-photo .placeholder-label{position:absolute;bottom:10px;right:12px;background:rgba(27,34,134,0.8);color:var(--white);font-size:10px;padding:4px 10px;border-radius:999px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase}
+
+  .card-body{padding:22px 24px 22px;flex:1;display:flex;flex-direction:column}
+  .card-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .card-emoji{font-size:24px;line-height:1}
+  .card-name{font-size:19px;font-weight:800;color:var(--blue-deep);letter-spacing:-0.2px}
+  .card-flag{font-size:15px;margin-left:2px}
+  .card-tagline{font-size:13px;color:var(--text-soft);line-height:1.5;margin-bottom:14px;padding-bottom:13px;border-bottom:1px dashed rgba(27,34,134,0.12)}
+  .card-product{font-size:13.5px;color:var(--text);font-weight:600;margin-bottom:12px;line-height:1.45}
+  .card-product .highlight{color:var(--blue);font-weight:700}
+
+  /* PERKS – standardisé */
+  .card-perks{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:12px}
+  .perk{padding:5px 11px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:0.3px;white-space:nowrap}
+  .perk.commission{background:var(--blue);color:var(--white)}
+  .perk.ads{background:var(--blue-deep);color:var(--white);opacity:0.85}
+  .perk.echo{background:var(--blue-pale);color:var(--blue-deep);border:1px dashed var(--blue-mid)}
+
+  /* FORM CTA */
+  .card-form{background:var(--blue-pale);border-top:1px solid var(--blue-mid);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .card-form-label{font-size:12px;color:var(--blue-deep);font-weight:700;line-height:1.3}
+  .card-form-label small{display:block;font-weight:500;color:var(--text-soft);font-size:10.5px;margin-top:2px;letter-spacing:0}
+  .card-form-btn{background:linear-gradient(135deg,var(--cta) 0%,var(--cta-deep) 100%);color:var(--white);padding:11px 20px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;text-decoration:none;white-space:nowrap;box-shadow:0 4px 14px rgba(255,90,60,0.45);transition:transform 0.15s ease;position:relative;animation:pulse 1.8s ease-in-out infinite}
+  .card-form-btn:hover{transform:translateY(-2px) scale(1.03);animation-play-state:paused}
+  @keyframes pulse{
+    0%   {box-shadow:0 4px 14px rgba(255,90,60,0.45), 0 0 0 0 rgba(255,90,60,0.55)}
+    70%  {box-shadow:0 4px 14px rgba(255,90,60,0.45), 0 0 0 14px rgba(255,90,60,0)}
+    100% {box-shadow:0 4px 14px rgba(255,90,60,0.45), 0 0 0 0 rgba(255,90,60,0)}
+  }
+
+  /* COMING SOON */
+  .card.coming{background:linear-gradient(135deg,#F1F5F9 0%,#E2E8F0 100%);--brand-color:#94A3B8}
+  .card.coming .card-photo{background:transparent;height:110px}
+  .card.coming .card-name{color:var(--text-soft)}
+  .card.coming .card-tagline{border-bottom:none;padding-bottom:0;margin-bottom:0;font-size:13.5px}
+
+  /* brand accents (barra lateral) */
+  .card.salomon{--brand-color:#1B2286}
+  .card.rosegold{--brand-color:#E85D75}
+  .card.kleem{--brand-color:#D4A574}
+  .card.alpine{--brand-color:#7C3AED}
+  .card.spotmyuv{--brand-color:#7C3AED}
+
+  /* FOOTER */
+  .footer{margin-top:30px;text-align:center;padding:26px 30px;background:var(--blue-deep);color:var(--white);border-radius:18px;box-shadow:0 8px 24px rgba(27,34,134,0.15)}
+  .footer-title{font-size:17px;font-weight:800;margin-bottom:8px}
+  .footer-text{font-size:13.5px;line-height:1.55;max-width:660px;margin:0 auto;opacity:0.9}
+  .footer-cta{margin-top:14px;font-size:12px;opacity:0.7;font-style:italic}
+
+  @media(max-width:900px){
+    .frame{width:100%;padding:36px 22px}
+    .grid{grid-template-columns:1fr}
+    .sesame-intro{grid-template-columns:1fr;text-align:center}
+    .sesame-wordmark{margin:0 auto;max-width:260px}
+    h1{font-size:32px}
+    .card-form{flex-direction:column;align-items:stretch;text-align:center}
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">Sesame · Agence partenaire TikTok Shop</div>
+    <h1>Les marques <span>ouvertes aux collabs</span></h1>
+  </div>
+
+  <!-- SESAME INTRO -->
+  <div class="sesame-intro">
+    <div class="sesame-wordmark">
+      <img src="sesame-logo.png" alt="Sesame">
+    </div>
+    <div class="sesame-intro-block">
+      <h3>Qui sommes-nous ?</h3>
+      <p><strong>Sesame</strong> est l'<strong>agence partenaire officielle du TikTok Shop en France</strong>. Nous accompagnons des marques premium — beauté, wellness, outdoor, lifestyle — dans le développement de leur communauté TikTok, et nous connectons nos créateurs·rices aux meilleures opportunités du moment.</p>
+    </div>
+  </div>
+
+  <!-- SECTION -->
+  <div class="section-title">
+    <h2>Les marques <span>actuellement ouvertes</span></h2>
+    <p>Chaque marque a ses propres critères — envoie le @ de ton compte TikTok via le formulaire de la marque qui t'intéresse.</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- SALOMON -->
+    <div class="card salomon">
+      <div class="card-photo">
+        <img src="salomon-xt-whisper-nobg.png" alt="Salomon XT-Whisper">
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <span class="card-emoji">⚫</span>
+          <span class="card-name">Salomon <span class="card-flag">🇫🇷</span></span>
+        </div>
+        <p class="card-tagline">Référence mondiale du sport outdoor & trail running.</p>
+        <p class="card-product">📌 <strong>XT-Whisper</strong> — la sneaker respirante et confort ultime pour l'été.</p>
+        <div class="card-perks">
+          <span class="perk commission">8 % commission</span>
+          <span class="perk ads">5 % avec Ads</span>
+          <span class="perk echo">🎁 Échantillon offert</span>
+        </div>
+      </div>
+      <div class="card-form">
+        <div class="card-form-label">Je veux collaborer avec Salomon<small>Envoie ton @ TikTok</small></div>
+        <a href="#FORM_SALOMON" class="card-form-btn" target="_blank" rel="noopener">S'inscrire →</a>
+      </div>
+    </div>
+
+    <!-- ROSEGOLD -->
+    <div class="card rosegold">
+      <div class="card-photo">
+        <img src="rosegold-roselash-nobg.png" alt="Rosegold Roselash">
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <span class="card-emoji">🌸</span>
+          <span class="card-name">Rosegold Paris <span class="card-flag">🇫🇷</span></span>
+        </div>
+        <p class="card-tagline">N°1 des sérums de croissance des cils. Made in France · vegan · testé cliniquement.</p>
+        <p class="card-product">📌 <strong>Roselash</strong> à <span class="highlight">24,90 €</span> + livraison gratuite.</p>
+        <div class="card-perks">
+          <span class="perk commission">10,05 % commission</span>
+          <span class="perk ads">5 % avec Ads</span>
+          <span class="perk echo">🎁 Échantillon offert</span>
+        </div>
+      </div>
+      <div class="card-form">
+        <div class="card-form-label">Je veux collaborer avec Rosegold<small>Envoie ton @ TikTok</small></div>
+        <a href="#FORM_ROSEGOLD" class="card-form-btn" target="_blank" rel="noopener">S'inscrire →</a>
+      </div>
+    </div>
+
+    <!-- KLEEM ORGANICS -->
+    <div class="card kleem">
+      <div class="card-photo">
+        <img src="kleem-nobg.png" alt="Kleem Advanced Retinol Moisturizer">
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <span class="card-emoji">🧴</span>
+          <span class="card-name">Kleem Organics</span>
+        </div>
+        <p class="card-tagline">Skincare sensoriel. Retinol 0,5 % · Formule vegan · Testé dermatologiquement.</p>
+        <p class="card-product">📌 <strong>Advanced Retinol Moisturizer</strong> à <span class="highlight">21,99 €</span> <span style="text-decoration:line-through;opacity:0.5">30 €</span> + livraison offerte.</p>
+        <div class="card-perks">
+          <span class="perk commission">12 % commission</span>
+          <span class="perk ads">5 % avec Ads</span>
+          <span class="perk echo">🎁 Échantillon offert</span>
+        </div>
+      </div>
+      <div class="card-form">
+        <div class="card-form-label">Je veux collaborer avec Kleem<small>Envoie ton @ TikTok</small></div>
+        <a href="#FORM_KLEEM" class="card-form-btn" target="_blank" rel="noopener">S'inscrire →</a>
+      </div>
+    </div>
+
+    <!-- ALPINE WHITE -->
+    <div class="card alpine">
+      <div class="card-photo">
+        <img src="alpine-white-nobg.png" alt="Alpine White Colour Correct Strips">
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <span class="card-emoji">🦷</span>
+          <span class="card-name">Alpine White <span class="card-flag">🇨🇭</span></span>
+        </div>
+        <p class="card-tagline">Marque suisse premium spécialisée dans les soins bucco-dentaires. Vegan · Sans peroxyde · Sûr pour l'émail.</p>
+        <p class="card-product">📌 <strong>Bandes Colour Correct</strong> à <span class="highlight">16,99 €</span> <span style="text-decoration:line-through;opacity:0.5">29,90 €</span> + bâtonnets interdentaires offerts.</p>
+        <div class="card-perks">
+          <span class="perk commission">13 % commission</span>
+          <span class="perk ads">5 % avec Ads</span>
+          <span class="perk echo">🎁 Échantillon offert</span>
+        </div>
+      </div>
+      <div class="card-form">
+        <div class="card-form-label">Je veux collaborer avec Alpine White<small>Envoie ton @ TikTok</small></div>
+        <a href="#FORM_ALPINE" class="card-form-btn" target="_blank" rel="noopener">S'inscrire →</a>
+      </div>
+    </div>
+
+    <!-- SPOTMYUV -->
+    <div class="card spotmyuv">
+      <div class="card-photo">
+        <img src="spotmyuv-nobg.png" alt="SpotMyUV Pack 16 stickers">
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <span class="card-emoji">☀️</span>
+          <span class="card-name">SpotMyUV</span>
+        </div>
+        <p class="card-tagline">Le sticker qui change de couleur avec le soleil : violet = remets de la crème, transparent = tu es protégé·e. Résistant à l'eau, 12 h, testé par dermatologues.</p>
+        <p class="card-product">📌 <strong>Pack 16 stickers</strong> à <span class="highlight">15,99 €</span> — offre <strong>3 packs à -20 %</strong> + livraison offerte dès 20 €.</p>
+        <div class="card-perks">
+          <span class="perk commission">12 % commission</span>
+          <span class="perk ads">5 % avec Ads</span>
+          <span class="perk echo">🎁 Échantillon offert</span>
+        </div>
+      </div>
+      <div class="card-form">
+        <div class="card-form-label">Je veux collaborer avec SpotMyUV<small>Envoie ton @ TikTok</small></div>
+        <a href="#FORM_SPOTMYUV" class="card-form-btn" target="_blank" rel="noopener">S'inscrire →</a>
+      </div>
+    </div>
+
+    <!-- COMING SOON -->
+    <div class="card coming">
+      <div class="card-photo">
+        <span class="placeholder">🚀</span>
+      </div>
+      <div class="card-body">
+        <div class="card-head">
+          <span class="card-emoji">🚀</span>
+          <span class="card-name">Et bien plus à venir…</span>
+        </div>
+        <p class="card-tagline">De nouvelles marques rejoignent Sesame chaque mois — beauté, lifestyle, wellness, outdoor, tech. Reste connecté·e ici pour être parmi les premiers·ères informés·ées dès qu'une collab s'ouvre.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p class="footer-title">💌 Une question ?</p>
+    <p class="footer-text">Écris-moi directement dans le groupe ou en DM. Chaque marque applique ses propres critères d'approbation (audience, engagement, cohérence de contenu).</p>
+    <p class="footer-cta">✨ On a hâte de collaborer avec toi !</p>
+  </div>
+
+</div>
+</body>
+</html>
