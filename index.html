@@ -96,6 +96,14 @@
   .live-btn{background:linear-gradient(135deg,var(--cta) 0%,var(--cta-deep) 100%);color:var(--white);padding:14px 24px;border-radius:999px;font-size:13px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;box-shadow:0 6px 18px rgba(255,90,60,0.5);flex-shrink:0}
   @media(max-width:900px){.live-banner{flex-direction:column;text-align:center}.live-banner-left{flex-direction:column}}
 
+  /* LIVE IMAGE BLOCK */
+  .live-block{margin-top:14px;text-align:center}
+  .live-img-link{display:block}
+  .live-img{width:100%;border-radius:18px;display:block;box-shadow:0 10px 30px rgba(27,34,134,0.12)}
+  .live-red-btn{display:inline-block;margin-top:18px;background:linear-gradient(135deg,#FF3B30 0%,#E11D2E 100%);color:#fff;padding:16px 34px;border-radius:999px;font-size:15px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;text-decoration:none;box-shadow:0 6px 18px rgba(225,29,46,0.5);animation:redpulse 1.6s ease-in-out infinite;transition:transform .15s ease}
+  .live-red-btn:hover{transform:translateY(-2px)}
+  @keyframes redpulse{0%{box-shadow:0 6px 18px rgba(225,29,46,0.5),0 0 0 0 rgba(225,29,46,0.55)}70%{box-shadow:0 6px 18px rgba(225,29,46,0.5),0 0 0 16px rgba(225,29,46,0)}100%{box-shadow:0 6px 18px rgba(225,29,46,0.5),0 0 0 0 rgba(225,29,46,0)}}
+
   /* COMING SOON */
   .card.coming{background:linear-gradient(135deg,#F1F5F9 0%,#E2E8F0 100%);--brand-color:#94A3B8}
   .card.coming .card-photo{background:transparent;height:110px}
@@ -144,17 +152,11 @@
     </div>
   </div>
 
-  <!-- LIVE RECRUITMENT BANNER -->
-  <a class="live-banner" href="https://forms.office.com/Pages/ResponsePage.aspx?id=y6tr8HGzuUmhbvucDmaU5UEs-QVhQKNHpk_G4k7Oa2NUOTQ2UkZPWUdKNzFCMjhWV1NIUTZGRjEyNy4u&amp;lang=fr-FR" target="_blank" rel="noopener">
-    <div class="live-banner-left">
-      <span class="live-badge"><span class="live-dot"></span>LIVE</span>
-      <div class="live-text">
-        <h2>On recherche des créateurs pour des LIVES</h2>
-        <p>Tu veux animer des LIVES avec nos marques ? Rejoins notre programme LIVE dédié — remplis le formulaire, on revient vers toi rapidement.</p>
-      </div>
-    </div>
-    <span class="live-btn">Je veux faire des LIVES →</span>
-  </a>
+  <!-- LIVE RECRUITMENT (image + CTA) -->
+  <div class="live-block">
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=y6tr8HGzuUmhbvucDmaU5UEs-QVhQKNHpk_G4k7Oa2NUOTQ2UkZPWUdKNzFCMjhWV1NIUTZGRjEyNy4u&amp;lang=fr-FR" target="_blank" rel="noopener" class="live-img-link"><img src="hosts-live-banner.png" alt="On recherche des hosts LIVE" class="live-img"></a>
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=y6tr8HGzuUmhbvucDmaU5UEs-QVhQKNHpk_G4k7Oa2NUOTQ2UkZPWUdKNzFCMjhWV1NIUTZGRjEyNy4u&amp;lang=fr-FR" target="_blank" rel="noopener" class="live-red-btn">Je veux faire des lives →</a>
+  </div>
 
   <!-- SECTION -->
   <div class="section-title">
