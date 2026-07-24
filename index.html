@@ -84,6 +84,18 @@
     100% {box-shadow:0 4px 14px rgba(255,90,60,0.45), 0 0 0 0 rgba(255,90,60,0)}
   }
 
+  /* LIVE BANNER */
+  .live-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(135deg,var(--blue-deep) 0%,var(--blue) 100%);color:var(--white);border-radius:20px;padding:24px 32px;margin-top:26px;text-decoration:none;box-shadow:0 12px 30px rgba(1,6,175,0.28);border:1px solid rgba(255,255,255,0.10);transition:transform .15s ease}
+  .live-banner:hover{transform:translateY(-2px)}
+  .live-banner-left{display:flex;align-items:center;gap:20px}
+  .live-badge{display:inline-flex;align-items:center;gap:8px;background:var(--cta-deep);color:var(--white);font-weight:800;font-size:14px;letter-spacing:2px;padding:9px 16px;border-radius:999px;text-transform:uppercase;flex-shrink:0}
+  .live-dot{width:10px;height:10px;border-radius:50%;background:#fff;animation:livepulse 1.4s infinite}
+  @keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,0.7)}70%{box-shadow:0 0 0 10px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+  .live-text h2{font-size:22px;font-weight:800;line-height:1.2;letter-spacing:-0.3px;color:var(--white)}
+  .live-text p{font-size:13.5px;line-height:1.5;opacity:0.92;margin-top:6px;max-width:640px}
+  .live-btn{background:linear-gradient(135deg,var(--cta) 0%,var(--cta-deep) 100%);color:var(--white);padding:14px 24px;border-radius:999px;font-size:13px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;box-shadow:0 6px 18px rgba(255,90,60,0.5);flex-shrink:0}
+  @media(max-width:900px){.live-banner{flex-direction:column;text-align:center}.live-banner-left{flex-direction:column}}
+
   /* COMING SOON */
   .card.coming{background:linear-gradient(135deg,#F1F5F9 0%,#E2E8F0 100%);--brand-color:#94A3B8}
   .card.coming .card-photo{background:transparent;height:110px}
@@ -121,6 +133,18 @@
     <div class="logo">Sesame · Agence partenaire TikTok Shop</div>
     <h1>Les marques <span>ouvertes aux collabs</span></h1>
   </div>
+
+  <!-- LIVE RECRUITMENT BANNER -->
+  <a class="live-banner" href="https://forms.office.com/Pages/ResponsePage.aspx?id=y6tr8HGzuUmhbvucDmaU5UEs-QVhQKNHpk_G4k7Oa2NUOTQ2UkZPWUdKNzFCMjhWV1NIUTZGRjEyNy4u" target="_blank" rel="noopener">
+    <div class="live-banner-left">
+      <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+      <div class="live-text">
+        <h2>On recherche des créateurs pour des LIVES</h2>
+        <p>Tu veux animer des LIVES avec nos marques ? Rejoins notre programme LIVE dédié — remplis le formulaire, on revient vers toi rapidement.</p>
+      </div>
+    </div>
+    <span class="live-btn">Je veux faire des LIVES →</span>
+  </a>
 
   <!-- SESAME INTRO -->
   <div class="sesame-intro">
